@@ -1,6 +1,8 @@
 #!/bin/bash
 
-version="0.7"
+version="1.0"
+# CHANGELOG
+# rinoma del file forzato
 # to do 
 # possibilità di cambiare rate e codifica. da pagian web php. scrive poi su file i valori
 # echo $A | cut -f 2 -d "#"  
@@ -60,7 +62,7 @@ do
 	estensione=".avi"
  	codifica
  	echo "#  Sposto file INTRO in elaborati"
-	mv -v $nomefile $OLD/$nomefile
+	mv -v -f mefile $OLD/$nomefile
    else
  	echo "#  Copia in corso per il file. File non pronto per elaborazione. Attendo Termine.  :  $nomefile  "
    fi
@@ -101,7 +103,7 @@ do
          echo "# INTRO trovato per questo ORIGINAL"	
 	 codifica
          echo "#  Sposto ORIG file in elaborati"
-         mv -v $nomefile $OLD/$nomefile
+         mv -f -v $nomefile $OLD/$nomefile
 
 	 ORIG_DA_AGGANCIARE=$OUT/`basename "$nomefile" $estensione`.ts
 	 echo "# ORIG da agganciare : $ORIG_DA_AGGANCIARE"
