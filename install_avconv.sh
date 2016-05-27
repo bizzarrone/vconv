@@ -1,4 +1,7 @@
 #!/bin/bash
+# versione script installazione autoatica: 1.0
+# Autore: Luca C.
+# Ultima modivica: 27/5/2016
 
 # aggiorno il sistema
 apt-get update
@@ -20,6 +23,7 @@ cd /scripts
 git clone https://github.com/bizzarrone/vconv.git
 mv /scripts/vconv/avconvluca.sh /scripts/
 touch /scripts/avconv.log
+chmod 777 /scripts/parametri.txt
 
 # CREAZIONE Share di rete
 mkdir /CONDIVISA
