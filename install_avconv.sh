@@ -1,5 +1,5 @@
 #!/bin/bash
-# versione script installazione autoatica: 1.0
+# versione script installazione autoatica: 1.1
 # Autore: Luca C.
 # Ultima modivica: 27/5/2016
 
@@ -42,6 +42,13 @@ echo  " writable = yes" >> /etc/samba/smb.conf
 echo  " guest ok = yes" >> /etc/samba/smb.conf
 
 # creare servizio all'avvio
+mv /scripts/edge  /etc/init.d/
+mv /scripts/vconv /etc/init.d/
+update-rc.d edge defaults
+update-rc.d edge enable
+update-rc.d vconv defaults
+update-rc.d vconv enable
+update-rc.d apache2 enable 
 
 # installare le webpages
 wget https://dl.dropboxusercontent.com/u/374873/avconvweb.tar.gz
