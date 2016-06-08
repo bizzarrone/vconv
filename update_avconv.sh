@@ -1,5 +1,8 @@
+#!/bin/bash
+# Script per aggiornamnto programma avconv
+
 rm -rf /scripts
-mv -f /CONDIVISA /CONDIVISA-OLDù
+mv -f /CONDIVISA /CONDIVISA-OLD
 mv -f /vconv /vconv-old
 mv -f /etc/init.d/rc.local /etc/init.d/rc.local.old
 mv -f /var/www/html /var/www/html-old
