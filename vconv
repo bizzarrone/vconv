@@ -17,7 +17,7 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 
 case "$1" in
     start)
-         /scripts/avconv.sh > /scripts/avconv.log
+         /vconv/avconv.sh > /vconv/avconv.log
 	;;
     restart|reload|force-reload)
         echo "Error: argument '$1' not supported" >&2

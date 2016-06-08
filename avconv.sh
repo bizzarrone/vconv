@@ -1,6 +1,9 @@
 #!/bin/bash
 # CHANGELOG
 # ---------------------------
+# 2016-05-27 v2.0
+# mv finale -f per forzare sovrascrizione
+# ---------------------------
 # 2016-05-26 v1.9
 # corretto samplig rate che risultavano differente per intro e video e causava problemi con audio in concatenamento
 # ---------------------------
@@ -31,7 +34,7 @@
 
 function lettura_parametri
 {
- file="/scripts/parametri.txt"
+ file="/vconv/parametri.txt"
  while read line
  do
 	ver=$line
@@ -163,13 +166,13 @@ do
 		echo "# FINALE: creazione sottocartella $SOTTOCARTELLA"	
 		mkdir "$SOTTOCARTELLA"
 		chmod 777 "$SOTTOCARTELLA"
-		mv "$FINAL/$NOME_FINALE"  "$FINAL/$SOTTOCARTELLA"
+		mv -f "$FINAL/$NOME_FINALE"  "$FINAL/$SOTTOCARTELLA"
 		chmod 777 "$FINAL/$SOTTOCARTELLA"
 		cd "$SOTTOCARTELLA"
 		echo "# FINALE: creazione sottocartella $SOTTOCARTELLA"	
 	 fi
 	 #rinomino il file togleindo underscore
-         find -name "*_*" -type f | rename 's/_/ /g'
+         find -name "*_*" -type f | rename -f 's/_/ /g'
 	 cd -
 	 # find -name "* *" -type f | rename 's/ /_/g'
 	 # codifica join

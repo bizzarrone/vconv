@@ -1,1 +1,6 @@
-../parametri.txt
+2.0
+5200k
+128k
+30
+medium
+on
