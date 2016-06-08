@@ -15,10 +15,11 @@ As root user (ie: sudo su - ) launch following commands:
 
 In case of updating:
 -------------------
+As root user (ie: sudo su - ) launch following commands:
 
 <pre>
   cd ~
-  https://raw.githubusercontent.com/bizzarrone/vconv/master/update_avconv.sh
+  wget https://raw.githubusercontent.com/bizzarrone/vconv/master/update_avconv.sh
   sh update_avconv.sh
   reboot
 </per>

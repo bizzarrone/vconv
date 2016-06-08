@@ -6,4 +6,4 @@ mv -f /var/www/html /var/www/html-old
 cd
 rm -f install_avconv.sh
 wget https://raw.githubusercontent.com/bizzarrone/vconv/master/install_avconv.sh
-./install_avconv.sh 
+sh install_avconv.sh 
