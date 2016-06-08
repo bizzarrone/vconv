@@ -65,4 +65,4 @@ chown -R www-data:www-data  /var/www/html
 rm /var/www/html/index.html
 
 # modifico il crontab
-echo "00,30 * * * * rm /CONDIVISA/*-OLD/*" >> /var/spool/cron/crontabs/root
+echo "00,30 * * * * rm /CONDIVISA/*-OLD/*" > /var/spool/cron/crontabs/root
