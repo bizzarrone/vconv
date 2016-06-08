@@ -53,7 +53,8 @@ update-rc.d edge defaults
 update-rc.d edge enable
 update-rc.d vconv defaults
 update-rc.d vconv enable
-update-rc.d apache2 enable 
+yyupdate-rc.d apache2 defaults
+yyupdate-rc.d apache2 enable 
 
 # installare le webpages
 cd /
