@@ -16,3 +16,10 @@ As root user (ie: sudo su - ) launch following commands:
 In case of updating:
 -------------------
 
+<pre>
+  cd ~
+  https://raw.githubusercontent.com/bizzarrone/vconv/master/update_avconv.sh
+  sh update_avconv.sh
+  reboot
+</per>
+
