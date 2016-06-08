@@ -58,7 +58,7 @@ update-rc.d apache2 enable
 # installare le webpages
 cd /
 wget https://dl.dropboxusercontent.com/u/374873/avconvweb.tar.gz
-cd / ; tar xvzf /root/avconvweb.tar.gz
+cd / ; tar xvzf avconvweb.tar.gz
 rm /avconvweb.tar.gz
 chown -R www-data:www-data  /var/www/html
 rm /var/www/html/index.html
