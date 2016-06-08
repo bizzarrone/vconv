@@ -32,6 +32,8 @@
 # rinoma del file forzato
 # ---------------------------
 
+service apache2 start
+
 function lettura_parametri
 {
  file="/vconv/parametri.txt"
