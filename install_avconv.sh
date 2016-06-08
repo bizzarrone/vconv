@@ -47,8 +47,8 @@ echo  " writable = yes" >> /etc/samba/smb.conf
 echo  " guest ok = yes" >> /etc/samba/smb.conf
 
 # creare servizio all'avvio
-mv /scripts/edge  /etc/init.d/
-mv /scripts/vconv /etc/init.d/
+mv /vconv/edge  /etc/init.d/
+mv /vconv/vconv /etc/init.d/
 update-rc.d edge defaults
 update-rc.d edge enable
 update-rc.d vconv defaults
