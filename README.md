@@ -3,6 +3,7 @@
 
 # As root user (ie: sudo su - ) launch following commands:
 
+<pRE>
   cd ~
   wget https://raw.githubusercontent.com/bizzarrone/vconv/master/install_avconv.sh
   sh install_avconv.sh
